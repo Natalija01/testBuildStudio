@@ -1,0 +1,13 @@
+@import '~bootstrap/scss/bootstrap';
+@import "~slick-carousel/slick/slick.css";
+
+svg:hover path {
+    fill: rgb(127, 228, 253);
+}
+.container{
+    max-width: 940px;
+}
+.noGutter{
+    padding-left: 0;
+    padding-right: 0;
+}
