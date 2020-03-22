@@ -4,11 +4,10 @@ import router from "./router";
 import store from "./store";
 import "bootstrap";
 import jQuery from "jquery";
+window.$ = window.jQuery = jQuery;
 import "slick-carousel";
 
 import "./assets/style.scss";
-window.$ = window.jQuery = jQuery;
-
 
 Vue.config.productionTip = false;
 
