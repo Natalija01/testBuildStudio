@@ -155,7 +155,7 @@ li .nav-link {
   fill-rule: evenodd;
 }
 .cls-1:hover {
-  fill: #058fe3;
+  fill: #02baf3;
   cursor: url("http://www.touristiko.me/test/cursor.png"), auto;
 }
 
