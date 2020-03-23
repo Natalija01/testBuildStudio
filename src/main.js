@@ -6,6 +6,8 @@ import "bootstrap";
 import jQuery from "jquery";
 window.$ = window.jQuery = jQuery;
 import "slick-carousel";
+import Vuelidate from "vuelidate";
+Vue.use(Vuelidate);
 
 import "./assets/style.scss";
 

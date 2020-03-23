@@ -3,11 +3,11 @@
     <section class="jumbotron text-center mb-0 ">
       <div class="container ">
         <img
-          id="slider-overimage" 
+          id="slider-overimage"
           src="@/assets/home-assets/Hero IMG/slider-overimage.png"
           width="80%"
         />
-        <p class="lead text-muted px-5 pt-3">
+        <p class="lead text-muted px-5 pt-3 boja">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
           eu eratiuy lacus, vel congue mauris. Fusce velitaria justo, faucibus
           eu.
@@ -33,5 +33,8 @@
   color: #fff;
   background-color: #29d14d;
   border-color: #29d14d;
+}
+.boja {
+  color: #8a8888;
 }
 </style>

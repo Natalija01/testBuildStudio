@@ -75,11 +75,11 @@ export default {
     };
   }
 
-  /*methods: {
-    deleteEvent: function(sign) {
-      this.splice(this.sign, 1);
+  /* methods: {
+    remove(sign){
+      this.$delete(sign, -1);
     }
-  }*/
+    }*/
 };
 </script>
 

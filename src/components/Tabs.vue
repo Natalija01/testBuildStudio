@@ -84,7 +84,7 @@
         <div class="row text-left">
           <div class="tab-content" id="pills-tabContent">
             <div
-              class="tab-pane fade show active"
+              class="tab-pane fade show active boja pt-3"
               id="pills-web"
               role="tabpanel"
               aria-labelledby="pills-web-tab"
@@ -106,7 +106,7 @@
               </ul>
             </div>
             <div
-              class="tab-pane fade"
+              class="tab-pane fade boja pt-3"
               id="pills-photo"
               role="tabpanel"
               aria-labelledby="pills-photo-tab"
@@ -120,20 +120,25 @@
               </ul>
             </div>
             <div
-              class="tab-pane fade"
+              class="tab-pane fade boja pt-3"
               id="pills-seo"
               role="tabpanel"
               aria-labelledby="pills-seo-tab"
             >
-              222.
+              Sed sit amet justo in lacus fermentum elementum. Mauris dictum
+              eget magna ac ultricies. lobortis et justo eget tincidunt
+              tristique ipsum tincidunt tristique ipsum
             </div>
             <div
-              class="tab-pane fade"
+              class="tab-pane fade boja pt-3"
               id="pills-app"
               role="tabpanel"
               aria-labelledby="pills-app-tab"
             >
-              44.
+              Sed sit amet justo in lacus fermentum elementum. Mauris dictum
+              eget magna ac ultricies. Lobortis et justo eget tincidunt
+              tristique ipsum tincidunt tristique ipsum. Lobortis et justo eget
+              tincidunt tristique ipsum tincidunt.
             </div>
           </div>
         </div>
@@ -178,5 +183,8 @@ export default {};
 .nav-pills .nav-link {
   color: #737373;
   padding-bottom: 0px;
+}
+.boja {
+  color: #8a8888;
 }
 </style>

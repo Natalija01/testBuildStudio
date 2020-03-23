@@ -2,8 +2,8 @@
   <div>
     <navBar />
     <underNav />
-    <div class="container" style="margin-bottom:60px">
-      <div class="row justify-content-end pt-3 pb-3 mt-3">
+    <div class="container boja" style="margin-bottom:60px">
+      <div class="row justify-content-end pt-3 pb-3 mt-3 boja">
         <div class="col-lg-5 pb-4">
           <img
             src="@/assets/about-assets/aboutImg.png"
@@ -11,8 +11,8 @@
             width="100%"
           />
         </div>
-        <div class="col-lg-7 mt-0 mb-0">
-          <p class="text-left">
+        <div class="col-lg-7 mt-0 mb-0 ">
+          <p class="text-left ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
             eros ipsum, dapibus vitae lectus sed, pretium feugiat elit. Integer
             id porta mi. Morbi dignissim lorem metus, eget varius magna tempus
@@ -32,7 +32,7 @@
       </div>
       <div class="row">
         <div class="col-lg-6">
-          <h6>MISSION STATEMENT</h6>
+          <h4 class="text-left font-weight-bold boja">MISSION STATEMENT</h4>
           <p class="text-left">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
             eros ipsum, dapibus vitae lectus sed, pretium feugiat elit. Integer
@@ -44,7 +44,7 @@
           </p>
         </div>
         <div class="col-lg-6">
-          <h6>FUN FACTS</h6>
+          <h4 class="text-left font-weight-bold boja">FUN FACTS</h4>
           <p class="text-left">
             Nulla blandit dui mauris, in ultrices eros dignissim a. Pellentesque
             cursus justo ipsum, eget gravida neque suscipit non. Nunc sed
@@ -75,3 +75,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.boja {
+  color: #8a8888;
+}
+</style>
