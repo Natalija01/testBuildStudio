@@ -2,7 +2,16 @@
   <div>
     <navBar />
     <div class="margin-container">
-      <underNav />
+      <div class="container-fluid" style="background-color:#4CAF50">
+        <div class="container">
+          <div class="row py-3">
+            <div class="col">
+              <h6 class="font-weight-bold">GOT A QUESTION OR INQUERY?</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!--MAPS -->
       <div class="container-fluid">
         <div class="row" style="padding-bottom: 50px">
@@ -111,7 +120,7 @@
                 type="submit"
                 :disabled="submitStatus === 'PENDING'"
               >
-                Submit!
+                SUBMIT MESSAGE
               </button>
               <p class="typo__p" v-if="submitStatus === 'OK'">
                 Thanks for your submission!
@@ -154,15 +163,14 @@
 
 <script>
 import navBar from "@/components/navBar.vue";
-import underNav from "@/components/underNav.vue";
+
 import Footer from "@/components/Footer.vue";
 
-import { required, maxLength,email } from "vuelidate/lib/validators";
+import { required, maxLength, email } from "vuelidate/lib/validators";
 
 export default {
   components: {
     navBar,
-    underNav,
     Footer
   },
   data() {
@@ -176,7 +184,7 @@ export default {
   },
   validations: {
     name: { required },
-    email: { required,email },
+    email: { required, email },
     text: {
       required,
       maxLength: maxLength(1000)
@@ -207,5 +215,9 @@ export default {
 .error {
   color: red;
   font-size: 12px;
+}
+h6 {
+  color: white;
+  float: left;
 }
 </style>

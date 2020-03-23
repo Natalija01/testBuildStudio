@@ -2,7 +2,9 @@
   <div class="container-fluid" style="background-color:#4CAF50">
     <div class="container">
       <div class="row py-3">
-        <div class="col"><h6>ABOUT MY BUSINESS</h6></div>
+        <div class="col ">
+          <h6 class="font-weight-bold">ABOUT MY BUSINESS</h6>
+        </div>
       </div>
     </div>
   </div>
