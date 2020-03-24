@@ -1,0 +1,41 @@
+{
+  "todos": [
+    {
+      "imgUrl": "bang.png",
+      "category":["all","website"] 
+    },
+    {
+      "imgUrl": "left.png",
+      "category": ["all", "print"]
+    },
+    {
+        "imgUrl": "right.png",
+        "category": ["all", "photography","print","web","application"]
+      },
+      {
+        "imgUrl": "img.png",
+        "category": ["all", "web", "photography"]
+      },
+      {
+        "imgUrl": "Slika1.png",
+        "category":["all", "application"]
+      },
+      {
+        "imgUrl": "Slika3.png",
+        "category":["all", "print", "photography"]
+      },
+      {
+        "imgUrl": "social.png",
+        "category":["all", "print"]
+      },
+      {
+        "imgUrl": "girl and boy.png",
+        "category":["all", "print"]
+      },
+      {
+        "imgUrl": "buttons.png",
+        "category":["all", "print", "web"]
+      }
+      
+  ]
+}

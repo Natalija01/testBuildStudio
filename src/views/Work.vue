@@ -10,20 +10,19 @@
         </div>
       </div>
     </div>
-
-  
-
+    <workGallery />
     <Footer />
   </div>
 </template>
 
 <script>
 import navBar from "@/components/navBar.vue";
+import workGallery from "@/components/workGallery.vue";
 
 export default {
   components: {
     navBar,
-    
+    workGallery
   }
 };
 </script>

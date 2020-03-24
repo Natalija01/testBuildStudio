@@ -142,14 +142,14 @@
             <br />Company Inc, <br />Las vegas street 201 <br />55001 Nevada,
             USA <br />Phone: +1 145 000 101
             <br />
-            <a href="mailto:usa@mysite.com">usa@mysite.com</a>
+            <a href="mailto:usa@mysite.com">info@display.com</a>
             <br />
             <br />
             <br />
             <b>STORE HOURS:</b>
             <br />
-            <br />Phone: +1 129 209 291 <br />E-mail:
-            <a href="mailto:support@mysite.com">support@mysite.com</a>
+            <br />Monday - Thursday: 8am - 5pm <br />Friday: 8am - 5pm<br />Saturday:
+            9am - 5pm<br />Sunday: Closed
             <br />
             <br />
             <br />
