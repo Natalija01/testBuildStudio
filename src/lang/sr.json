@@ -1,0 +1,14 @@
+{
+  "pages": {
+    "home": "Naslovna",
+    "about": "O nama",
+    "work": "Projekti",
+    "contact": "Kontakt"
+  },
+  "homepage":{
+    "buttonHero":"PREGLED PORTFOLIJA",
+    "titleYT":"Upoznajte nas malo bolje",
+    "titleSlider":"Nekoliko naših istaknutih projekata"
+  }
+  
+}

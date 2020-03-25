@@ -1,0 +1,13 @@
+{
+  "pages": {
+    "home": "Home",
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "homepage":{
+    "buttonHero":"BROWSE PORTFOLIO",
+    "titleYT":"Get to know us a little better",
+    "titleSlider":"A Couple of Our Featured Projects"
+  }
+}

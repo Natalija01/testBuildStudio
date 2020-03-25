@@ -124,18 +124,51 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <router-link class="nav-link active" to="/">Home</router-link>
+              <router-link
+                class="nav-link "
+                :to="$i18nRoute({ name: 'home' })"
+                >{{ $t("pages.home") }}</router-link
+              >
             </li>
             <li class="nav-item">
-              <router-link class="nav-link " to="/about">About</router-link>
+              <router-link
+                class="nav-link "
+                :to="$i18nRoute({ name: 'about' })"
+                >{{ $t("pages.about") }}</router-link
+              >
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/work">Work</router-link>
+              <router-link
+                class="nav-link"
+                :to="$i18nRoute({ name: 'work' })"
+                >{{ $t("pages.work") }}</router-link
+              >
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/contact">Contact</router-link>
+              <router-link
+                class="nav-link"
+                :to="$i18nRoute({ name: 'contact' })"
+                >{{ $t("pages.contact") }}</router-link
+              >
             </li>
           </ul>
+          <div class="ml-auto">
+            <select
+              class="LanguageSwitcher "
+              name="language"
+              @change="changeLanguage"
+            >
+              <option
+                v-for="lang in langs"
+                :key="lang"
+                :selected="isCurrentLanguage(lang)"
+                :class="{ 'is-selected': isCurrentLanguage(lang) }"
+                :value="lang"
+              >
+                {{ lang }}
+              </option>
+            </select>
+          </div>
         </div>
       </nav>
     </div>
@@ -143,7 +176,44 @@
 </template>
 
 <script>
-export default {};
+import { Trans } from "@/plugins/Translation";
+export default {
+  data() {
+    return {
+      langs: ["en", "sr"]
+    };
+  },
+  computed: {
+    user() {
+      return this.$store.getters.user;
+    },
+    supportedLanguages() {
+      return Trans.supportedLanguages;
+    },
+    currentLanguage() {
+      return Trans.currentLanguage;
+    }
+  },
+  methods: {
+    logout() {
+      this.$store.dispatch("signOut");
+    },
+    changeLanguage(e) {
+      const lang = e.target.value;
+      // this.$logger.info(lang)
+      const to = this.$router.resolve({ params: { lang } });
+      return Trans.changeLanguage(lang).then(() => {
+        // console.log(to.location)
+        this.$router.push(to.location);
+        localStorage.setItem("lang", lang);
+        location.reload();
+      });
+    },
+    isCurrentLanguage(lang) {
+      return lang === this.currentLanguage;
+    }
+  }
+};
 </script>
 
 <style scoped>

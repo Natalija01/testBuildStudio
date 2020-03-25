@@ -1,31 +1,36 @@
 <template>
   <div>
     <div class="container mb-3">
-      <div class="row   mt-3 ">
-        <ul class="nav">
-          <li class="nav-item">
-            <h5 class="nav-link  "><a v-on:click="filter('all')"> All </a></h5>
-          </li>
-          <li class="nav-item">
-            <h5 class="nav-link ">
-              <a v-on:click="filter('print')"> Print </a>
-            </h5>
-          </li>
-          <li class="nav-item">
-            <h5 class="nav-link ">
-              <a v-on:click="filter('photography')"> Photography </a>
-            </h5>
-          </li>
-          <li class="nav-item">
-            <h5 class="nav-link "><a v-on:click="filter('web')"> Web </a></h5>
-          </li>
-          <li class="nav-item">
-            <h5 class="nav-link ">
-              <a v-on:click="filter('application')"> Application </a>
-            </h5>
-          </li>
-
-          <li class="nav-item ml-auto d-none d-md-block">
+      <div class="row">
+        <div class="mr-auto   mt-3 ">
+          <ul class="nav">
+            <li class="nav-item">
+              <h5 class="nav-link  ">
+                <a v-on:click="filter('all')"> All </a>
+              </h5>
+            </li>
+            <li class="nav-item">
+              <h5 class="nav-link ">
+                <a v-on:click="filter('print')"> Print </a>
+              </h5>
+            </li>
+            <li class="nav-item">
+              <h5 class="nav-link ">
+                <a v-on:click="filter('photography')"> Photography </a>
+              </h5>
+            </li>
+            <li class="nav-item">
+              <h5 class="nav-link "><a v-on:click="filter('web')"> Web </a></h5>
+            </li>
+            <li class="nav-item">
+              <h5 class="nav-link ">
+                <a v-on:click="filter('application')"> Application </a>
+              </h5>
+            </li>
+          </ul>
+        </div>
+        <div class="ml-auto mt-3">
+          <li class="nav-item d-none d-md-block">
             <img
               class="nav-link "
               v-on:click="switchView()"
@@ -33,7 +38,7 @@
               alt=""
             />
           </li>
-        </ul>
+        </div>
       </div>
 
       <!-- GridView structure -->

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container mt-3 mb-3">
-      <h2>A Couple of Our Featured Projects</h2>
+      <h2>{{ $t("homepage.titleSlider") }}</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu
         erat lacus, vel congue mauris. Fusce velit justo, faucibus eu sagittis

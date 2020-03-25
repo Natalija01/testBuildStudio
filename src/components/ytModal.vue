@@ -37,7 +37,7 @@
         </div>
 
         <div class="col-lg-7 text-left py-3 ">
-          <h2>Get to know us a little better</h2>
+          <h2>{{ $t("homepage.titleYT") }}</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
             consequat pharetra metus venenatis blandit. Integer vel eleifend

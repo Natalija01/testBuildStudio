@@ -15,7 +15,7 @@
         </p>
         <p>
           <button type="button" class="btn btn-success mt-3 btnAnimation">
-            BROWSE PORTFOLIO
+            {{ $t("homepage.buttonHero") }}
           </button>
         </p>
       </div>
